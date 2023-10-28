@@ -13,7 +13,7 @@ from core.response import ok_with_body
 router = APIRouter()
 
 @router.get("/get-all")
-def get_all_item(q = None, offset = 0, limit = 20, from_price: float = None, to_price: float = None, 
+def get_all_item(q = None, offset = 0, limit = 20, from_price: float = 0, to_price: float = None, 
                  theme = None, part = None, tier = None, order_by = None, range_day: int = None):
     items = []
     with Session(DB) as session:

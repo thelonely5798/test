@@ -118,7 +118,7 @@ export default function MyComponent(props: any) {
       body = { ...body, from_price: Number(priceRange.from) }
     }
     if (priceRange.to) {
-      body = { ...body, to_price: Number(priceRange.from) }
+      body = { ...body, to_price: Number(priceRange.to) }
     }
     if (selectedSortByDay) {
       body = { ...body, range_day: Number(selectedSortByDay) }
