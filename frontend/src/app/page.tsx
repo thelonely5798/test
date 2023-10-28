@@ -173,6 +173,8 @@ export default function MyComponent(props: any) {
     setSelectedTier("")
     setSelectedSortByPrice("")
 
+    pagnation.current.offset = 0
+    
     if(refSearch?.current) {
       refSearch.current.value = ""
     }
